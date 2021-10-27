@@ -1,21 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div>
+    <!-- <ChattingRoom /> -->
+    <!-- <RecordTable /> -->
+    <!-- <MediaRecorder /> -->
+    <!-- <GetMediaStream /> -->
+    <GetUserMedia />
+    <!-- <Devices /> -->
+  </div>
 </template>
 
-<script lang="ts">
+<script>
 import { Options, Vue } from "vue-class-component";
-import HelloWorld from "./components/HelloWorld.vue";
+import Devices from "@/views/Device/Devices.vue";
+import GetUserMedia from "@/views/Device/GetUserMedia.vue";
+import GetMediaStream from "@/views/Device/GetMediaStream.vue";
+import MediaRecorder from "@/views/Record/MediaRecorder.vue";
+import RecordTable from "@/views/Record/RecordTable.vue";
+import ChattingRoom from "@/views/ChattingRoom/Index.vue";
 
 @Options({
   components: {
-    HelloWorld,
+    GetUserMedia,
+    Devices,
+    GetMediaStream,
+    MediaRecorder,
+    RecordTable,
+    ChattingRoom,
   },
 })
 export default class App extends Vue {}
 </script>
 
-<style lang="less">
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
