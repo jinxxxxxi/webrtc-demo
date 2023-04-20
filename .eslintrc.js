@@ -13,6 +13,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
   },
+  ignorePatterns: ["src/assets/js/*"],
   rules: {
     "@typescript-eslint/ban-ts-ignore": "off",
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",

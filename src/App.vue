@@ -3,9 +3,10 @@
     <!-- <ChattingRoom /> -->
     <!-- <RecordTable /> -->
     <!-- <MediaRecorder /> -->
-    <!-- <GetMediaStream /> -->
-    <GetUserMedia />
+    <GetMediaStream />
+    <!-- <GetUserMedia /> -->
     <!-- <Devices /> -->
+    <!-- <PeerConnectionComp /> -->
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import GetMediaStream from "@/views/Device/GetMediaStream.vue";
 import MediaRecorder from "@/views/Record/MediaRecorder.vue";
 import RecordTable from "@/views/Record/RecordTable.vue";
 import ChattingRoom from "@/views/ChattingRoom/Index.vue";
+import PeerConnectionComp from "@/views/peerConnection/index.vue";
 
 @Options({
   components: {
@@ -26,6 +28,7 @@ import ChattingRoom from "@/views/ChattingRoom/Index.vue";
     MediaRecorder,
     RecordTable,
     ChattingRoom,
+    PeerConnectionComp,
   },
 })
 export default class App extends Vue {}
